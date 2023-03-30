@@ -1,3 +1,6 @@
+@import url("cabecalho.css");
+
+    /*---^STYLES^---*/
 
     *{
         padding: 0;
@@ -9,7 +12,18 @@
         --cor-4: #326589;
         --cor-5: #eb9b00;
         --cor-6: #000000;
+        --cor-7: #ffffff;
 
         --font-1: "poppins";
 
     }
+
+    /*---^REGRRAS^---*/
+
+    body{
+        background-color: var(--cor-1);
+        font-family: 'poppins';
+    }
+
+
+    
