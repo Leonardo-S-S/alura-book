@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Books</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,18 +57,75 @@
         
     <main>
         <section class="container__cabecalho">
-            <h1 class="cabecalho__titulo1">
+            <h2 class="cabecalho__titulo1">
                 Já sabe por onde começar?
-            </h1>
+            </h2>
             <p class="cabecalho__texto1">
                 Encontre em nossa estante o que precisa para seu desenvolvimento!
             </p>
+            <input type="search" class="container__pesquisa" placeholder="Qual sera sua próxima leitura?">
+        </section>
 
+        <section class="carrocel">
+            <h2 class="carrocel__titulo">
+                ÚLTIMOS LANÇAMENTOS
+            </h2>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                    
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                  <div class="swiper-slide"><img src="midia/Guia Front-end.png" alt=""></div>
+                  <div class="swiper-slide"><img src="midia/Javascript.png" alt=""></div>
+                  <div class="swiper-slide"><img src="midia/Liderança.png" alt=""></div>
+                  <div class="swiper-slide"><img src="midia/Portugol.png" alt=""></div>
+                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+
+        </section>
+
+        <section class="oiaso">
+            <div class="teste">
+                <h3>Talvez você também se interesse por...</h3>
+                <h4>Angular 11 e Firebase</h4>
+                <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <a href="#"><img src="midia/Favoritos.svg" alt=""></a>
+                <a href="#"><img src="midia/Compras.svg" alt=""></a>
+            </div>
+            <div class="curiosidade">
+                <img src="midia/Angular.png" alt="">
+                <a href="#">Saiba mais</a>
+            </div>
         </section>
     </main>
 
     <footer>
 
     </footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(...)
+      </script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        },
+        });
+      </script>
 </body>
 </html>

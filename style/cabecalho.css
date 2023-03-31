@@ -76,13 +76,81 @@
         color: var(--cor-7);
         padding: 32px;
         text-align: center;
-        
-    }
+        }
 
     .cabecalho__titulo1{
         font-size: 1rem;
+        margin: 10px;
     }
 
     .cabecalho__texto1{`
+        font-size: 1.14em;
+        margin: 10px;
+    }
+
+    .container__pesquisa{
+        width: 70vw;
+        background-color: transparent;
+        color: var(--cor-7);
+        padding: 0.5em;
+        text-align: center;
         font-size: 1rem;
+        border-radius: 20px;
+        border: 1px solid var(--cor-7);margin: 10px;
+    }
+
+    .container__pesquisa::placeholder{
+        color: var(--cor-7);
+       background: url(../midia/lupa.svg);
+       background-repeat: no-repeat;
+       padding: ;
+
+    }
+
+    /*---CARROCEL---*/
+
+    .carrocel{
+
+    }
+
+    .carrocel__titulo{
+        font-size: 1.13em;
+        background-color: var(--cor-7);
+        padding: 1em 0 0.5em 0;
+        color: var(--cor-5);
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .swioer-slide{
+        width: 100%;
+
+    }
+
+    .swiper-button-next,.swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-pagination{
+        position: initial;
+        padding: 0.5em 0;
+    }
+
+    /*---FIM DO CARROCEL---*/
+
+    .oiaso{
+        background-color: var(--cor-7);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 24px;
+        border-radius: 15px;
+    }
+
+    .teste{
+        margin: 20px;
+    }
+
+    .curiosidade{
+        align-items: center;
+        display: ;
     }
