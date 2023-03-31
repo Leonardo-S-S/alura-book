@@ -152,5 +152,29 @@
 
     .curiosidade{
         align-items: center;
-        display: ;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .teste1{
+        color: #eb9b00;
+        padding: 20px 5px;
+    }
+
+    .teste2{
+        color: #002f52;
+        padding: 20px 5px;
+        font-size: 1.2em;
+    }
+
+    .teste__img{
+        padding: 30px;
+    }
+    .botao1{
+        text-decoration: none;
+        color: var(--cor-7);
+        background-color: var(--cor-5);
+        padding: 1em 2em;
+        font-weight: 700;
+        margin-bottom: 30px;
     }
