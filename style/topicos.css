@@ -1,0 +1,31 @@
+.secao__topicos{
+    background-image: linear-gradient(to right, var(--cor-3), var(--cor-4) );
+    padding: 30px;
+}
+
+.tema__topico{
+    text-align: center;
+    color: var(--cor-7);
+    font-weight: 300;
+    padding: 0 0 1.5em 0;
+}
+
+.lista__principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista__topicos{
+    list-style-type: none;
+    margin: 2em 0.5em;
+}
+
+.lista__topicos1{
+    background: var(--cor-5);
+    text-decoration: none;
+    color: var(--cor-7);
+    font-weight: 700;
+    padding: 1em;
+    margin: 1em;
+}

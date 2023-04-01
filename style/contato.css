@@ -1,0 +1,40 @@
+.contato{
+    color: var(--cor-3);
+    padding: 2em;
+    text-align: center;
+    
+}
+
+.contato__tema{
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.contato__assunto{
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.contato__contato{
+    text-align: center;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-size: 1em;
+    width: 70vw;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.contato__contato, ::placeholder{
+    align-items: center;
+    background-image: url(../midia/Email.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--cor-3);    
+}
