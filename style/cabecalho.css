@@ -22,6 +22,13 @@
     align-items: center;
     position: relative;
 }
+.cabecalho1{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
 
 .container__botao{
     
@@ -73,11 +80,30 @@
         color: var(--cor-4);
     }
 
+    /* ABAIXO SÃO AS CONFIGURAÇÕES PARA TABLETE MIN 1024 */
 
-@media screen and (min\-width "1024") {
+@media screen and (min-width: 1024px) {
     
-    .cabecalho{
-        display: block;
-    }   
+    .cabecalho1{
+        display: none;
+    }
+
+    .container__1024{
+
+    }
+
+    .container__1014__titulo, .container__1014__titulo__b{
+        font-family: var(--font-2);
+        font-size: 30px;
+    }
+
+    .container__1014__titulo{
+        font-weight: 400;
+    }
+
+    .container__1014__titulo__b{
+        font-weight: 700;
+        font-size: 1e;
+    }
 
 }
