@@ -59,6 +59,7 @@ text-align: center;
     color: var(--cor-7);
     background-color: var(--cor-5);
     padding: 1em 2em;
+    width: 100%;
     font-weight: 700;
     margin-bottom: 30px;
 }
