@@ -21,7 +21,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1em;
     width: 70vw;
     border-radius: 20px;
@@ -30,11 +30,32 @@
 
 .contato__contato, ::placeholder{
     align-items: center;
-    background-image: url(../midia/Email.svg);
-    background-repeat: no-repeat;
+    background: url("../midia/Email.svg") no-repeat left,center ;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     font-size: 1em;
     color: var(--cor-3);    
+}
+
+@media screen and (min-width: 1024px) { 
+    .contato{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .contato__bloco1{
+        margin-left: 70px;
+        text-align: start;
+    }
+
+    .contato__assunto{
+        margin-top: 5px;
+    }
+
+    .contato__contato{
+        width: 60%;
+    }
+
 }
