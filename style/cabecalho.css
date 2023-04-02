@@ -69,6 +69,10 @@
         padding-right: 100px;
     }
 
+    .menu__lista__item{
+        list-style: none;
+    }
+
     .menu__lista__titulo{
         color: #eb9b00;
         font-weight: 700;
