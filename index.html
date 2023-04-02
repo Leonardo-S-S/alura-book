@@ -17,13 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
+<!-- ABAIXO SÃO OS CONTEÚDOS VISÍVEIS -->
+
 <body>
     <header class="cabecalho">
 
             <div class="cabecalho1">
                 <input type="checkbox" id="menu" class="container__botao">
                 <label for="menu">
-                    <span class="cabecalho__menu cintainer__img"></span>
+                    <span class="cabecalho__menu container__img"></span>
                 </label>
                 <ul class="menu__lista">
                     <li class="menu__lista__titulo">
@@ -48,14 +51,55 @@
                 <img src="midia/Logo.svg" alt="" class="container__img">
             </div>
 
-            <div class="container__1024">
-                <img src="midia/Logo.svg" alt="">
-                <h1 class="container__1014__titulo">
-                  <b class="container__1024__titulo__b">Alura</b>Books
-                </h1>
-                <ul>
+            <!-- ABAIXO SÃO CONFIGURAÇÕES PARA TELA A PARTIR DE 1024PX -->
 
-                </ul>
+            <div class="p1024__container">
+                <div class="container__1024">
+                    <img src="midia/Logo.svg" alt="" class="container__1024__img__logo">
+                    <p class="container__1024__titulo">
+                      <b class="container__1024__titulo__b">Alura</b>Books
+                    </P>
+                    
+                        <ul class="container__1024__lista__principal">
+
+            <input type="checkbox" id="cabecalho__1024__menu" class="cabecalho__1024__menu__g">
+                <label for="cabecalho__1024__menu">                    
+                        <li class="container__1024__lista1">
+                            CATAGORIAS
+                        </li>
+                </label>
+
+                            <ul class="menu__lista"> 
+                                <li class="menu__lista__item">
+                                    <a href="" class="lista__link">PROGRAMAÇÃO</a>
+                                </li>
+                                <li class="menu__lista__item">
+                                    <a href="" class="lista__link">FRONT-END</a>
+                                </li>
+                                <li class="menu__lista__item">
+                                    <a href="" class="lista__link">INFRAESTRUTURA</a>
+                                </li>
+                                <li class="menu__lista__item">
+                                    <a href="" class="lista__link">BUSINESS</a>
+                                </li>
+                                <li class="menu__lista__item">
+                                    <a href="" class="lista__link">DESIGN & UX</a>
+                                </li>
+                            </ul>
+
+                        <li class="container__1024__lista1">
+                            <a href="" class="container__1024__lista__link">
+                                FAVORITOS
+                            </a>
+                        </li>
+                
+                        <li class="container__1024__lista1">
+                            <a href="" class="container__1024__lista__link">
+                                MINHA ESTANTE
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="cabecalho__1">
@@ -63,10 +107,13 @@
                 <a href="#"><img src="midia/Sacola.png" alt="" class="container__img cabecalho__img__sacola"></a>
                 <a href="#"><img src="midia/Usuário.svg" alt="" class="container__img cabecalho__img__perfil"></a>
             </div>
-       
-    </header>
-        
-    <main>
+       </header>
+
+
+<!--ABAIXO SÃO AS CONFIGURAÇÕES DO BANNER-->
+
+
+       <main>
         <section class="container__cabecalho">
             <h2 class="cabecalho__titulo1">
                 Já sabe por onde começar?
@@ -77,33 +124,37 @@
             <input type="search" class="container__pesquisa" placeholder="Qual sera sua próxima leitura?">
         </section>
 
+
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO 1° CARROCEL -->
+
+
         <section class="carrocel">
             <h2 class="carrocel__titulo">
                 ÚLTIMOS LANÇAMENTOS
             </h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                    
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Guia Front-end.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Javascript.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Liderança.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Portugol.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              
-              </div>
-
+        <div class="alinhamento__carrocel">
+                <div class="swiper">               
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Guia Front-end.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Javascript.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Liderança.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Portugol.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </div>
         </section>
+        
+
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO CARD -->
+
 
         <section class="card2">
             <div class="card2__linha1">
@@ -137,33 +188,39 @@
             </div>
         </section>
 
-        <!-- ABAIXO O SEGUNDO CARROCEL -->
+
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO 2º CARROCEL -->
+
 
         <section class="carrocel">
             <h2 class="carrocel__titulo">
                 MAIS VENDIDOS
             </h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                    
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Guia Front-end.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Javascript.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Liderança.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/Portugol.png" alt=""></div>
-                  <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
+            <div class="alinhamento__carrocel">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Guia Front-end.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Javascript.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Liderança.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/Portugol.png" alt=""></div>
+                      <div class="swiper-slide"><img src="midia/ApacheKafka.png" alt=""></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
         </section>
+
+
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO CARD -->
+
 
         <section class="card2">
             <div class="card2__linha1">
@@ -197,6 +254,10 @@
                 </div>
             </div>
         </section>
+
+        
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO TOPICO DE VISITADOS -->
+
 
         <section class="secao__topicos">
             <h2 class="tema__topico">
@@ -246,6 +307,10 @@
                 </li>
             </ul>
         </section>
+
+
+<!-- ABAIXO SÃO AS CONFIGURAÇÕES DO FOOTER -->
+
 
         <section class="contato">
             <h2 class="contato__tema">

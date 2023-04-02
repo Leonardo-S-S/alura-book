@@ -33,3 +33,34 @@
    padding: ;
 
 }
+
+/* ABAIXO SÃO AS CONFIGURAÇÕES DO BANER PARA TELA ACIMA DE 1024PX */
+
+@media screen and (min-width: 1024px) {
+
+    .container__cabecalho{
+
+    }
+
+    .cabecalho__titulo1{
+        font-size: 2.25em;
+        padding-top: 40px;
+    }
+
+    .cabecalho__texto1{
+
+    }
+
+    .container__pesquisa{
+        padding: 24px;  
+        width: 50vw;
+        font-size: 1.3em;
+        border-radius: 40px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.335);
+        
+    }
+
+    .container__pesquisa::placeholder{
+
+    }
+}

@@ -2,6 +2,7 @@
     background-color: var(--cor-7);
     margin: 30px;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.307);
 
 }
 
@@ -61,4 +62,47 @@ text-align: center;
     padding: 0.5em 1em;
     font-weight: 700;
     margin-bottom: 30px;
+}
+
+/* ABAIXO SÃO AS CONFIGURAÇÕES DO CARD PARA TELA ACIMA DE 1024PX */
+
+@media screen and (min-width: 1024px){
+
+    .card2{
+        width: 50%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .card2__linha1{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 30px;
+        justify-content: space-between;
+    }
+    
+    .card2__titulo1{
+        color: #eb9b00;
+        margin: 0 0 10px 0;
+    }
+
+    .card2__titulo2{
+        color: #002f52;
+        margin: 0 0 0px 0;
+    }
+
+    .card2__texto2{
+        margin: 3px 0;
+        padding-right: 5px;
+    }   
+
+    .card2__linha2{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        padding: 0 30px 15px 30px;
+        align-items: center;
+        text-align: center;
+    }
+
+
 }
