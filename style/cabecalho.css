@@ -22,6 +22,12 @@
     align-items: center;
     position: relative;
 }
+
+.cabecalho__icones{
+    display: flex;
+    justify-content: center;
+}
+
 .cabecalho1{
     
     display: flex;
@@ -74,7 +80,7 @@
     }
 
     .menu__lista__titulo{
-        color: #eb9b00;
+        color: var(--cor-5);
         font-weight: 700;
     }
 
@@ -84,6 +90,10 @@
     }
 
     .p1024__container{
+        display: none;
+    }
+
+    .cabecalho__1 p{
         display: none;
     }
 
@@ -156,3 +166,25 @@
 
     }
 
+/* ABAIXO SÃO AS CONFIGURAÇÕES PARA PC MIN 1728 */
+
+@media screen and (min-width: 1728px) {
+
+    .cabecalho__1 p {
+        display: block;
+    }
+
+    .cabecalho__1{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .cabecalho__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-6);
+    }
+
+}    
