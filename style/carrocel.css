@@ -52,6 +52,7 @@
     .alinhamento__carrocel{
         display: flex;
         justify-content: center;
+
     }
 
     .swiper{
@@ -76,12 +77,20 @@
         display: block;
         top: 60%;
     }
+    
+
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1728px){
 
-    .biscoito{
-        display: flex;
+    .container__1728__banner__carrocel{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .swiper{
+        margin: 1em 0 2em 0;
+        width: 90%;
     }
 
 }
