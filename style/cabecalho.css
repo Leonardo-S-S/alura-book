@@ -62,7 +62,14 @@
 
     .container__botao:checked~.menu__lista{
     display: block;
-    
+    }
+
+    .container__botao:checked~.container__rotulo > .cabecalho__menu{
+        background-image: url("../midia/Menu\ Aberto.png");
+    }
+
+    .container__botao:checked~.container__rotulo{
+        background-color: var(--cor-3);
     }
 
     .container__botao{
@@ -164,6 +171,16 @@
         display: none;
     }
 
+    .menu__lista__item:hover{
+        background-color: var(--cor-3);
+        
+    }
+
+    .menu__lista__item, .menu__lista__titulo{
+        padding: 1rem;
+        background-color: var(--cor-7);
+        padding-right: 30px;}
+
     }
 
 /* ABAIXO SÃO AS CONFIGURAÇÕES PARA PC MIN 1728 */
@@ -186,5 +203,10 @@
         text-decoration: none;
         color: var(--cor-6);
     }
+
+    .menu__lista__item, .menu__lista__titulo{
+        padding: 1rem;
+        background-color: var(--cor-7);
+        padding-right: 30px;}
 
 }    

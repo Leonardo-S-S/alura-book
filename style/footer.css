@@ -29,16 +29,9 @@
  
     }
     
-    .footer__grid2{
-
-    }
-
-    .footer__grid3{
-
-    }
-
-    .footer__grid4{
-
+    .footer__grid2, .footer__grid3, .footer__grid4{
+        border-left: 1px solid lightgray;
+        padding-left: 10px;
     }
 
     .footer_subtema{
